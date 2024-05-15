@@ -9,7 +9,7 @@ import java.net.URISyntaxException;
 import java.util.Optional;
 
 @Controller
-@RequestMapping(path="/final/student") // Updated URI
+@RequestMapping(path="/student") // Updated URI
 public class MainController {
 
     @Autowired
