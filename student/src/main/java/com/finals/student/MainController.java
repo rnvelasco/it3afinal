@@ -18,7 +18,7 @@ public class MainController {
     @PostMapping
     public ResponseEntity createStudent(@RequestBody Student student) throws URISyntaxException {
         Student savedStudent = studentRepository.save(student);
-        return ResponseEntity.created(new URI("/final/student/" + savedStudent.getId())).body(savedStudent);
+        return ResponseEntity.created(new URI("/student/" + savedStudent.getId())).body(savedStudent);
     }
 
     @PutMapping("/{id}")
